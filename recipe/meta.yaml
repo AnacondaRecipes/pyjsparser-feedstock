@@ -26,6 +26,8 @@ requirements:
 test:
   imports:
     - pyjsparser
+  command:
+    - pip check
 
 about:
   home: "https://github.com/PiotrDabkowski/pyjsparser"
