@@ -34,7 +34,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Fast javascript parser (based on esprima.js)"
+  summary: Fast javascript parser (based on esprima.js)
   doc_url: https://github.com/PiotrDabkowski/pyjsparser
   dev_url: https://github.com/PiotrDabkowski/pyjsparser
 
