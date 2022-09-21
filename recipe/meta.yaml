@@ -30,7 +30,7 @@ test:
     - pip check
 
 about:
-  home: "https://github.com/PiotrDabkowski/pyjsparser"
+  home: https://github.com/PiotrDabkowski/pyjsparser
   license: MIT
   license_family: MIT
   license_file: LICENSE
