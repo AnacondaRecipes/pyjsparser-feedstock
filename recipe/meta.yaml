@@ -10,27 +10,33 @@ source:
   sha256: be60da6b778cc5a5296a69d8e7d614f1f870faf94e1b1b6ac591f2ad5d729579
 
 build:
-  noarch: python
   number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
+  skip: True # [py<36]
 
 requirements:
   host:
     - pip
     - python
+    - setuptools
+    - wheel
   run:
     - python
 
 test:
+  requires:
+    - pip
   imports:
     - pyjsparser
+  command:
+    - pip check
 
 about:
-  home: "https://github.com/PiotrDabkowski/pyjsparser"
+  home: https://github.com/PiotrDabkowski/pyjsparser
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Fast javascript parser (based on esprima.js)"
+  summary: Fast javascript parser (based on esprima.js)
   doc_url: https://github.com/PiotrDabkowski/pyjsparser
   dev_url: https://github.com/PiotrDabkowski/pyjsparser
 
